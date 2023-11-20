@@ -1,0 +1,44 @@
+:root{
+    --main-color:rgb(244,245,248);
+}
+
+#body{
+    background-color: var(--main-color);
+    margin-top: 2%;
+}
+hr{
+    border: 0px;
+}
+#maindiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards{
+    width: 18%;
+    display: flex;
+}
+footer{
+    height: 5vh;
+    background-color: var(--main-color);
+}
+@media screen and (max-width: 975px) {
+    #maindiv{
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: calc(30% - 20px);
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width: 660px) {
+    .cards{
+        width: calc(40% - 20px);
+        margin-bottom: 3%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .cards{
+        width: calc(80% - 20px);
+        margin-bottom: 4%;
+    }
+}

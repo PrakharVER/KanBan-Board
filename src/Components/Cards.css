@@ -1,0 +1,104 @@
+#divcard{
+    width: 100%;
+}
+#upperdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    border: 3px solid rgb(230,232,235);
+    border-radius: 6px;
+    padding: 1% 2%;
+}
+#ud1{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+#ud1 > div:nth-child(2){
+    white-space: nowrap;
+    font-size: 1rem;
+}
+#ud1 > div:nth-child(3){
+    font-size: smaller;
+    color: gray;
+}
+#ud2{
+    display: flex;
+}
+#icn{
+    font-size: small;
+}
+#upperdiv > div:nth-child(2){
+    cursor: pointer;
+    font-size: large;
+} 
+
+/* for lower div */
+#ld{
+    min-height: 15vh;
+    max-height: 20vh;
+    border: 3px solid rgb(230,232,235);
+    border-radius: 5px;
+    padding: 2% 0;
+    margin: 5% 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#ld > div{
+    display: flex;
+}
+.ld1{
+    justify-content: space-between;
+    margin: 0 2%;
+    color: rgb(160,163,167);
+}
+.ld2{
+    font-size: .9rem;
+    margin: 2% 0 2.8% 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    line-height: 1.2em;
+    max-height: 2.4em;
+    cursor: pointer;
+}
+.ld2.expanded{
+    max-height: none;
+}
+.ld2 > div:nth-child(1){
+    margin-right: 1%;
+}
+.ld3{
+    color: rgb(160,163,167);
+}
+.ld3 > div{
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 0 2%;
+    padding: 0 1%;
+    display: flex;
+    align-items: center ;
+}
+#ldiv{
+    border: 3px solid rgb(230,232,235);
+    border-radius: 5px;
+    padding: 2% 0;
+    margin: 5% 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:300px) {
+    .ld3 > div{
+        font-size: small;
+    }
+    .ld2{
+        font-size: small;
+    }
+}

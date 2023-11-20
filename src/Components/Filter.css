@@ -1,0 +1,59 @@
+:root{
+    --main-color:rgb(192, 190, 190);
+}
+
+.btn{
+    display: flex;
+    border: 2px solid rgb(208, 209, 210);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    padding: .2% 1.2%;
+    margin: 2% 0 0 4%;
+    cursor: pointer;
+}
+.btn > div{
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+}
+
+/* Dropdown */
+#menu{
+    border: 2px solid rgb(207, 209, 211);
+    border-radius: 7px;
+    background-color: rgb(244,245,248);
+    padding: 1% 2% 1% 2%;
+    position: absolute;
+    width: 24%;
+    margin: 1% 0 0 4%;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+.ic{
+    color: var(--main-color);
+}
+.d1{
+    color: rgb(165, 164, 164);
+}
+.d2{
+    display: flex;
+    border: 2px solid var(--main-color);
+    border-radius: 3px;
+    width: 55%;
+    justify-content: space-between;
+    padding: 0 1%;
+    cursor: pointer;
+}
+@media screen and (max-width:573px) {
+    #menu{
+        width: 40%;
+    }
+    .d1{
+        font-size: small;
+    }
+}
